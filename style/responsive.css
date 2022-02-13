@@ -1,0 +1,20 @@
+/*Responsividade da tela*/
+@media screen and (max-width:700px){  /*@media é de media query*/ 
+    header .container{
+    display: flex;
+    flex-direction: column; /*joga o layout para baixo(vertical)*/
+    }
+
+    .botao{
+        margin-top: 5px;
+        width: 300px;
+    }
+
+}
+
+@media screen and (min-width:1000px){
+    .descricao{
+        width: 50%;
+    }
+}
+

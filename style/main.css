@@ -1,0 +1,149 @@
+/*declarando variável dentro do CSS*/
+:root{
+    --azul:#09cbe5;
+    --preta:#141414;
+}
+
+/*reset */
+*{      
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*Define o limite do container para nào "deformar"o design */
+}
+/*elementos base*/
+body {
+    background: var(--preta);
+    font-family:'Arial', Times, serif; /*Fonte principal e demais fontes caso nào tenha a fonte no device do usuário*/
+    color: white;
+}
+
+
+header .container{
+    color: var(--azul);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+    
+}
+
+header .logo{
+    margin-left: 5px;
+    color:var(--azul);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px; /*Espaçamento entre os links*/
+}
+
+header nav a:hover{ /*muda a cor do link ao passar o mouse*/
+    color: var(--azul);
+} 
+
+/*filme principal - imagem*/
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('../img/capa-tom-e-jerry.jpeg');
+
+    height: 400px;
+    background-size: cover;/* a imagem fica do tamanho da caixa*/
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+    
+}
+
+.titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border:none;
+    color: white;
+
+    /*O padding é o espaço interno(distância) que o elemento ocupa no botão nos 4 cantos, por exemplo*/
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    /*o cursor indicará área de click*/
+    cursor: pointer;
+    transition: .3s ease all; /*ao passar o mouse, a animação fica mais suave*/
+}
+
+/*ao passar o mouse no botão*/
+.botao:hover{
+    background-color: var(--azul);
+    color: black;
+    
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.titulo2{ /*texto antes do carrosel*/
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 5px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    color: black;
+    background-color: var(--azul);
+}
+
+.titulo2 i{
+  margin-left: 10px;
+}
+
+.titulo-meio{ /*a div que fica o texto em cima do carrossel*/
+    margin-left: 5px;
+    background-color: var(--azul);
+}
+
+.container{
+    margin-left: 20px;
+}
+
+.container i{
+    color:white;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+.box-filme{ /*cartazes do carrossel*/
+    height: 250px;
+    width: 50px;
+    display: block;
+    cursor: pointer;
+}
+
+.carrosel-filmes{
+    margin-top: 5px;
+    background-color: white;
+    
+}
+
+.bg-footer{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: var(--azul);
+    color: var(--preta);
+    
+}
